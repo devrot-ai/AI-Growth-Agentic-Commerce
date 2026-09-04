@@ -112,7 +112,7 @@ The document is a `DiscoveryResponse` object containing the following fields:
 |---|---|---|---|
 | `protocol` | `DiscoveryProtocol` | Yes | Protocol identification and version information. |
 | `api_base_url` | `string` (URI) | Yes | Base URL for the ACP REST API. Agents append resource paths to this URL. |
-| `transports` | `string[]` | Yes | Transport bindings supported by this seller (e.g., `["rest"]` or `["rest", "mcp"]`). See [SEP #135](https://github.com/agentic-commerce-protocol/agentic-commerce-protocol/issues/135) for the MCP transport binding. |
+| `transports` | `string[]` | Yes | Transport bindings supported by this seller (e.g., `["rest"]` or `["rest", "mcp"]`). See SEP #135 for the MCP transport binding. |
 | `capabilities` | `DiscoveryCapabilities` | Yes | Seller capabilities. |
 
 #### DiscoveryProtocol
@@ -158,7 +158,7 @@ The `services` enum is closed per API version. New values are introduced in new 
 | Value | Description |
 |---|---|
 | `rest` | REST API at the URL specified by `api_base_url`. |
-| `mcp` | Model Context Protocol server (see [SEP #135](https://github.com/agentic-commerce-protocol/agentic-commerce-protocol/issues/135)). |
+| `mcp` | Model Context Protocol server (see SEP #135). |
 
 The `transports` enum is closed per API version. New values are introduced in new API versions. Agents MAY treat the set as exhaustive for a given version.
 

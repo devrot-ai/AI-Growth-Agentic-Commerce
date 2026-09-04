@@ -127,7 +127,7 @@ If your employer owns your work and hasn't signed a Corporate CLA or given permi
 4. **Configuration issue:** Contact a maintainer
 
 **What to do:**
-- Check if you've signed before: https://cla-assistant.io/agentic-commerce-protocol/agentic-commerce-protocol
+- Check with this repository's CLA service if you've signed before
 - Check if your company is listed: [SIGNATORIES.md](SIGNATORIES.md)
 - If neither, comment on your PR: `@cla-assistant check`
 - If still no response, contact maintainers
@@ -189,7 +189,7 @@ Per Section 7 of the Individual CLA:
 ### Where Your Signature is Stored
 
 - **Location:** CLA Assistant's database (external service)
-- **Public record:** https://cla-assistant.io/agentic-commerce-protocol/agentic-commerce-protocol
+- **Public record:** See this repository's CLA records
 - **Associated with:** Your GitHub username
 - **Accessible by:** Project maintainers and the public
 
@@ -341,7 +341,7 @@ CLA Assistant processes minimal personal data (GitHub username). If you have pri
 ### Viewing Signatures
 
 All Individual CLA signatures are viewable at:
-https://cla-assistant.io/agentic-commerce-protocol/agentic-commerce-protocol
+See this repository's CLA service
 
 Click on any username to see:
 - When they signed
@@ -375,5 +375,5 @@ For questions about the Individual CLA process:
 - Review the full CLA text: [INDIVIDUAL.md](INDIVIDUAL.md)
 - Check the list of signatories: [SIGNATORIES.md](SIGNATORIES.md)
 - Compare with Corporate CLA: [CORPORATE.md](CORPORATE.md)
-- Ask in [GitHub Discussions](https://github.com/agentic-commerce-protocol/agentic-commerce-protocol/discussions)
+- Ask in this repository's GitHub Discussions
 

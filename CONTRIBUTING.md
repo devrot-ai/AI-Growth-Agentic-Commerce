@@ -189,7 +189,7 @@ Full Code of Conduct: [CODE_OF_CONDUCT.md](CODE_OF_CONDUCT.md)
 
 ## Getting Help
 
-- **Questions:** Open a [GitHub Discussion](https://github.com/agentic-commerce-protocol/agentic-commerce-protocol/discussions)
+- **Questions:** Open a GitHub Discussion in this repository
 - **Bugs:** Create an issue using the Bug Report template
 - **Features:** Create an issue using the Feature Request template
 - **SEPs:** See [docs/sep-guidelines.md](docs/sep-guidelines.md)

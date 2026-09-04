@@ -80,8 +80,7 @@ about this.
 
 ### SEP Workflow
 
-SEPs should be submitted as a GitHub Issue in the
-[primary repository](https://github.com/agentic-commerce-protocol/agentic-commerce-protocol).
+SEPs should be submitted as a GitHub Issue in this repository.
 The standard SEP workflow is:
 
 1. You, the SEP author, create a well-formatted GitHub Issue with the `SEP` and

@@ -179,8 +179,8 @@ ACP is jointly governed by **OpenAI** and **Stripe** as Founding Maintainers, wi
 ## 🤝 Community
 
 - **Code of Conduct**: [CODE_OF_CONDUCT.md](CODE_OF_CONDUCT.md)
-- **Discussions**: [GitHub Discussions](https://github.com/agentic-commerce-protocol/agentic-commerce-protocol/discussions)
-- **Issues**: [Report bugs or request features](https://github.com/agentic-commerce-protocol/agentic-commerce-protocol/issues)
+- **Discussions**: Use GitHub Discussions in this repository
+- **Issues**: Report bugs or request features in this repository
 - **SEPs**: [Propose protocol enhancements](docs/sep-guidelines.md)
 
 ---

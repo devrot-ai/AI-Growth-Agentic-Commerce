@@ -13,7 +13,7 @@ Unlike Individual CLA signatures (which are fully automated via CLA Assistant), 
 ### Step 1: Create a GitHub Issue
 
 **What to do:**
-1. Go to https://github.com/agentic-commerce-protocol/agentic-commerce-protocol/issues
+1. Go to this repository's issue tracker
 2. Click "New Issue"
 3. Title: `Corporate CLA: [Your Company Name]`
 4. Copy the template from [CORPORATE.md](CORPORATE.md) into the issue body
@@ -348,5 +348,5 @@ For questions about the Corporate CLA process:
 - Review [CORPORATE.md](CORPORATE.md) for the full CLA text
 - Review [MAINTAINER_GUIDE.md](MAINTAINER_GUIDE.md) for maintainer instructions
 - Check [SIGNATORIES.md](SIGNATORIES.md) for examples of signed CLAs
-- Ask in [GitHub Discussions](https://github.com/agentic-commerce-protocol/agentic-commerce-protocol/discussions)
+- Ask in this repository's GitHub Discussions
 

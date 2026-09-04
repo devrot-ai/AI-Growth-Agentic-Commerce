@@ -24,7 +24,7 @@ Last updated: 2026-06-03
 ## Individual CLA Signatories
 
 Individual signatories are tracked automatically by CLA Assistant at:
-https://cla-assistant.io/agentic-commerce-protocol/agentic-commerce-protocol
+See this repository's CLA service for signing instructions.
 
 ## How to Sign
 
