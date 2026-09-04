@@ -1,5 +1,6 @@
 {
-  "name": "@agentic-commerce-protocol/specification",
+  "name": "ai-growth-agentic-commerce",
+  "description": "Machine-readable commerce API schemas, OpenAPI definitions, and validation examples.",
   "version": "0.1.0",
   "scripts": {
     "compile:schema": "ajv compile --spec=draft2020 -c ajv-formats -s 'spec/unreleased/json-schema/*.json'",
