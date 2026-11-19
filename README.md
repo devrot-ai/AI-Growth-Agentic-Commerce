@@ -1,115 +1,52 @@
 # AI Growth Agentic Commerce
 
-Machine-readable contracts and examples for building agent-powered commerce integrations.
+A shared set of rules and examples so AI agents, stores, and payment systems can talk to each other without confusion.
 
-This repository is a developer toolkit, not a hosted API or checkout application. It gives an agent, merchant, payment provider, or integration team the shared schemas and API definitions needed to design, validate, and exchange commerce data consistently.
+This is not a running app or a hosted service. It is a collection of schemas and API definitions that anyone can use to make sure their data matches up with everyone else.
 
-## What Is Included
+## What You Get
 
-- **JSON Schema**: Validates request, response, event, and reusable data-model payloads.
-- **OpenAPI**: Describes the HTTP endpoints, operations, parameters, and security-related API surface.
-- **OpenRPC**: Describes the MCP checkout tools for clients that use an RPC-style integration.
-- **Examples**: Ready-to-study payloads covering checkout, carts, feeds, payments, authentication, orders, and extensions.
-- **Validation tooling**: Checks that schemas, OpenAPI definitions, and examples remain consistent.
+JSON Schemas to check that your data is in the right format. OpenAPI files that describe the HTTP endpoints. OpenRPC files for RPC-style integrations. Example payloads you can look at to see what things should look like. And a validation script that makes sure everything stays in sync.
 
-## Repository Layout
+## How It Is Organized
 
-```text
-spec/
-	2025-09-29/       Versioned specification snapshot
-	2025-12-12/       Versioned specification snapshot
-	2026-01-16/       Versioned specification snapshot
-	2026-01-30/       Versioned specification snapshot
-	2026-04-17/       Latest released specification snapshot
-	unreleased/       Current development schemas and API definitions
+The `spec/` folder has dated snapshots of the specification, like `2026-04-17/` for the latest release. Each snapshot contains JSON Schema, OpenAPI, and OpenRPC files. The `unreleased/` folder is where new work lives before it gets a release date.
 
-examples/
-	<version>/         Examples matching the corresponding spec snapshot
+The `examples/` folder has sample payloads that match each spec version.
 
-scripts/
-	validate-consistency.js
-```
+The `scripts/` folder has a validation script you can run to check everything.
 
-Each specification version is organized into format-specific directories:
+## Getting Started
 
-```text
-spec/<version>/json-schema/   JSON Schema files
-spec/<version>/openapi/       OpenAPI YAML files
-spec/<version>/openrpc/       OpenRPC JSON files
-```
-
-## Quick Start
-
-### Requirements
-
-- Node.js 18 or newer
-- pnpm 9 or newer
-
-Install the development dependencies:
+You need Node.js 18 or newer and pnpm 9 or newer.
 
 ```sh
 pnpm install
-```
-
-Run the complete consistency check:
-
-```sh
 pnpm validate:all
 ```
 
-Compile the unreleased JSON Schemas directly with AJV:
+That installs everything and runs the full check to make sure schemas, examples, and API definitions all line up.
+
+## How to Use It
+
+Pick a spec version and stick with it. Look at the examples to see what your data should look like. Validate your payloads against the JSON Schema before sending them. Then build your service around it. This repo does not run the service for you.
+
+If you want to try features that are still being worked on, look in `spec/unreleased/` and `examples/unreleased/`.
+
+## Useful Commands
 
 ```sh
-pnpm compile:schema
+pnpm validate:all          # check everything
+pnpm validate:json-schema  # compile all JSON schemas
+pnpm compile:schema        # compile unreleased schemas
+pnpm validate:examples     # check examples
+pnpm report:consistency    # run a consistency report
 ```
 
-Validate all versioned JSON Schemas:
+## Making Changes
 
-```sh
-pnpm validate:json-schema
-```
-
-The validation script checks schema and OpenAPI alignment, example payloads, field types, required fields, prohibited models, descriptions, and inline examples.
-
-## Using The Definitions
-
-Use the latest released snapshot when building an integration:
-
-- OpenAPI: [`spec/2026-04-17/openapi/`](spec/2026-04-17/openapi/)
-- JSON Schema: [`spec/2026-04-17/json-schema/`](spec/2026-04-17/json-schema/)
-- OpenRPC: [`spec/2026-04-17/openrpc/`](spec/2026-04-17/openrpc/)
-- Examples: [`examples/2026-04-17/`](examples/2026-04-17/)
-
-Use `spec/unreleased/` and `examples/unreleased/` only when intentionally targeting features that are still under development.
-
-For a typical integration workflow:
-
-1. Choose one specification version and use its schemas and API definitions together.
-2. Select the API surface you need, such as checkout, delegate payment, feeds, carts, or orders.
-3. Use the matching examples to understand the expected payload shape.
-4. Validate your own payloads against the JSON Schemas before sending or accepting them.
-5. Implement the HTTP or RPC service in your application; this repository does not run that service for you.
-
-## Package Commands
-
-| Command | Purpose |
-| --- | --- |
-| `pnpm validate:all` | Run the full consistency validator |
-| `pnpm validate:json-schema` | Compile every JSON Schema |
-| `pnpm compile:schema` | Compile unreleased JSON Schemas |
-| `pnpm validate:examples` | Validate examples and consistency rules |
-| `pnpm report:consistency` | Run the consistency report |
-
-## Contributing Changes Locally
-
-When changing a schema or API definition, update the corresponding examples and run:
-
-```sh
-pnpm validate:all
-```
-
-Keep released snapshots stable. Place ongoing schema work in `spec/unreleased/` and matching examples in `examples/unreleased/` until it is ready for a dated release snapshot.
+If you change a schema, update the matching examples and run `pnpm validate:all` to make sure nothing broke. Put new work in the `unreleased/` folders until it is ready for a release.
 
 ## License
 
-The specification material is distributed under the Apache License 2.0. See [`LICENSE`](LICENSE) and [`NOTICE`](NOTICE) for the applicable terms and attribution.
+Apache License 2.0. See the LICENSE and NOTICE files for details.
